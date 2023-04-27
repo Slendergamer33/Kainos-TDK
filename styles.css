@@ -25,6 +25,7 @@ h1::before {
     transform: translateX(-180%);
     font-size: 7rem;
     padding:0;
+    color: #ffffff;
   }
   
   html {
@@ -37,7 +38,7 @@ h1::before {
     min-inline-size: 100%;
     margin: 0;
     box-sizing: border-box;
-    
+    background-color: #1c1b1b;
     place-content: center;
     font-family: system-ui, sans-serif;
   }
@@ -62,6 +63,11 @@ h1::before {
     width: 50%;
     color: aliceblue;
     transform: translateX(35%);
+}
+.summary:hover {
+  background-color: #1c1b1b;
+    color:white;
+    transition: .5s;
 }
 .container1 {
     background-color: rgb(49, 49, 49);
