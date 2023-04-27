@@ -1,0 +1,116 @@
+h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  h1 {
+    position: relative;
+    left: 200%;
+    transform: translateX(-180%);
+    font-size: 7rem;
+    padding:0;
+  }
+  
+  html {
+    block-size: 100%;
+    inline-size: 100%;
+  }
+  
+  body {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    
+    place-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
+  
+.poster{
+    position: relative;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.summary {
+    margin:5%;
+    background-color: rgb(49, 49, 49);
+    padding: 1%;
+    border-radius: 10px;
+    width: 50%;
+    color: aliceblue;
+    transform: translateX(35%);
+}
+.container1 {
+    background-color: rgb(49, 49, 49);
+    place-items: center;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 0px;
+    border-radius: 15px;
+    left:50%;
+    transform:translateX(-50%)
+}
+.container1:hover {
+    background-color: #1c1b1b;
+    color:white;
+    transition: .5s;
+}
+.people {
+    align-items: center;
+    text-align:center;
+    display: flex;
+    position:relative;
+    top: 10px;
+    text-decoration: underline;
+    place-items: center;
+}
+.class1 {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-style: none;
+    white-space: nowrap;
+    place-items: center;
+    margin: 10px;
+    width: 300px;
+    left:50%;
+    transform:translateX(-50%)
+
+}
+.people-list li a{
+    list-style: none;
+    color: #ffffff;
+    place-items: center;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+.cast1 {
+    color: #ffffff;
+    transform:translateX(44%)
+}
